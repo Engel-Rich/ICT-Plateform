@@ -44,7 +44,7 @@ jobs:
 
           # Étape 5: Tuer le container en cours d'exécution s'il existe
           script: |
-            docker stop mon-app || true
-            docker rm mon-app || true
-            docker pull engelrich237/itc-backend:latest
-            docker run -d -p 80:8080 --name mon-app engelrich237/itc-backend:latest
+            cd /home/ubuntu/ict-backend
+            docker compose down || true  # Arrête et supprime les conteneurs s'ils existent
+            docker compose pull           # Met à jour les images définies dans docker-compose.yml
+            docker compose up --build -d 
