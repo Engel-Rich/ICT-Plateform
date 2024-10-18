@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: egel_rich.dev.sa_backend.SaBackendApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.743 s -- in egel_rich.dev.sa_backend.SaBackendApplicationTests
